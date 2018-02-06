@@ -7,15 +7,21 @@ public class Node : MonoBehaviour {
 	public bool hasTarget = false;
 	public bool startingPoint = false;
 
+	public float fScore = 10000;
+	public float gScore =10000;
+
+	public Node previousNode = null;
 
 
 	void OnTriggerEnter(Collider other)
 	{
-		Debug.Log(other.gameObject.name);
-		if(other.gameObject.tag == "Obstacle"){
+		if(other.gameObject.name == "Obstacle"){
 			traversable = false;
+			FindObjectOfType<NodeManager>().PaintNode(this,2);
+			gameObject.name = "obstaclenode";
 		}else if(other.gameObject.tag == "Target"){
 			hasTarget = true;
+			traversable =true;
 		}else if(other.gameObject.name == "Missile"){
 			startingPoint = true;
 		}

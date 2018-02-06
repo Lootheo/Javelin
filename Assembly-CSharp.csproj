@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4B211CEF-6898-F207-240B-E3BBB09E3DB7}</ProjectGuid>
+    <ProjectGuid>{4FD0915D-A4B1-E206-1D34-4AD7A2D432D2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AStar.cs" />
      <Compile Include="Assets\DepthFinding.cs" />
      <Compile Include="Assets\Node.cs" />
      <Compile Include="Assets\NodeManager.cs" />
