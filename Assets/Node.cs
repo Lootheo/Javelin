@@ -15,6 +15,7 @@ public class Node : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
+			Debug.Log(other.gameObject.name);
 		if(other.gameObject.name == "Obstacle"){
 			traversable = false;
 			FindObjectOfType<NodeManager>().PaintNode(this,2);

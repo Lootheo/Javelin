@@ -13,6 +13,7 @@ public class AStar : MonoBehaviour {
 	void Awake()
 	{
 		nodeManager = FindObjectOfType<NodeManager>();
+		Ray ray = new Ray(transform.position, transform.forward*1000);
 		nodes = nodeManager.CreateNodes();
 		StartCoroutine(FindPath());
 	}
@@ -85,7 +86,7 @@ public class AStar : MonoBehaviour {
 			Debug.Log(currentNode.traversable);
 			nodeManager.PaintNode(currentNode,3);
 			currentNode = currentNode.previousNode;
-			//totalPath.Add(currentNode);
+			totalPath.Add(currentNode);
 		}
 		return totalPath;
 	}
