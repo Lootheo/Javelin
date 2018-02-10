@@ -14,7 +14,6 @@ public class AStar : MonoBehaviour
     void Awake()
     {
         nodeManager = FindObjectOfType<NodeManager>();
-        Ray ray = new Ray(transform.position, transform.forward * 1000);
         nodes = nodeManager.CreateNodes();
         StartCoroutine(FindPath());
     }
@@ -89,14 +88,13 @@ public class AStar : MonoBehaviour
     List<Node> ReconstructPath(Node cameFrom, Node currentNode)
     {
         List<Node> totalPath = new List<Node>();
-        totalPath.Add(currentNode);
         while (currentNode != null)
         {
-            Debug.Log(currentNode.traversable);
+            totalPath.Add(currentNode);
             nodeManager.PaintNode(currentNode, 3);
             currentNode = currentNode.previousNode;
-            totalPath.Add(currentNode);
         }
+        totalPath.Reverse();
         GetComponent<PathFollow>().StartPath(totalPath);
         return totalPath;
     }
