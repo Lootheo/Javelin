@@ -51,13 +51,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AStar.cs" />
-     <Compile Include="Assets\DepthFinding.cs" />
-     <Compile Include="Assets\Node.cs" />
-     <Compile Include="Assets\NodeManager.cs" />
-     <Compile Include="Assets\ObstacleScript.cs" />
+     <Compile Include="Assets\Moments\Moments Recorder\Demo\Scripts\CubeKiller.cs" />
+     <Compile Include="Assets\Moments\Moments Recorder\Demo\Scripts\CubeSpawner.cs" />
+     <Compile Include="Assets\Moments\Moments Recorder\Demo\Scripts\Record.cs" />
+     <Compile Include="Assets\Moments\Moments Recorder\Scripts\Gif\GifEncoder.cs" />
+     <Compile Include="Assets\Moments\Moments Recorder\Scripts\Gif\GifFrame.cs" />
+     <Compile Include="Assets\Moments\Moments Recorder\Scripts\Gif\LzwEncoder.cs" />
+     <Compile Include="Assets\Moments\Moments Recorder\Scripts\Gif\NeuQuant.cs" />
+     <Compile Include="Assets\Moments\Moments Recorder\Scripts\MinAttribute.cs" />
+     <Compile Include="Assets\Moments\Moments Recorder\Scripts\Recorder.cs" />
+     <Compile Include="Assets\Moments\Moments Recorder\Scripts\ReflectionUtils.cs" />
+     <Compile Include="Assets\Moments\Moments Recorder\Scripts\Worker.cs" />
+     <Compile Include="Assets\Scripts\AStar.cs" />
+     <Compile Include="Assets\Scripts\DepthFinding.cs" />
      <Compile Include="Assets\Scripts\MissileLookAt.cs" />
+     <Compile Include="Assets\Scripts\Node.cs" />
+     <Compile Include="Assets\Scripts\NodeManager.cs" />
+     <Compile Include="Assets\Scripts\ObstacleScript.cs" />
+     <Compile Include="Assets\Scripts\PathFollow.cs" />
      <Compile Include="Assets\Scripts\TargetScript.cs" />
+     <None Include="Assets\Moments\LICENSE.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/home/lootheo/Unity-2017.3.0f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
