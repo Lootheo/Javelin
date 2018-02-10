@@ -32,7 +32,6 @@ public class PathFollow : MonoBehaviour
         Debug.Log(pathToFollow.Count);
         Debug.Log(pathToFollow[0].gameObject.name);
         transform.position = pathToFollow[0].transform.position;
-
         nextNode = pathToFollow[1];
         pathStarted = true;
     }
