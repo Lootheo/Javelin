@@ -1,7 +1,6 @@
 # MissileAI : Pathfinding for missile simulations
 
-![Alt Text](https://github.com/{user}/{repo}/raw/master/example.gif | height = 200px)
-
+<img src="/example.gif?raw=true" width="200px">
 
 This the code referenced in the blog posts found here: https://manuelotheo.com/guided-missile-1/
 
