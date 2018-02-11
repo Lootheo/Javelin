@@ -2,7 +2,9 @@
 
 <img src="/example.gif?raw=true" width="800px">
 
-This the code referenced in the blog posts found here: https://manuelotheo.com/guided-missile-1/
+This the code referenced in the blog posts found here: <br> https://manuelotheo.com/guided-missile-1/
+https://manuelotheo.com/game-notes-guided-missile-part-2/
+https://manuelotheo.com/game-notes-guided-missile-part-3/
 
 The project will cover various pathfinding algorithms to solve a single problem: how a missile can reach a target while avoiding obstacles.
 
