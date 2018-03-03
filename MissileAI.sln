@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissileAI", "Assembly-CShar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissileAI", "Assembly-CSharp-Editor-firstpass.csproj", "{C9BA90F7-022A-668B-6A91-DE6F35B67DA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissileAI", "Assembly-CSharp-Editor.csproj", "{05E8BE28-0E38-AC7A-F72A-84ED19B3627A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,10 +25,6 @@ Global
 		{C9BA90F7-022A-668B-6A91-DE6F35B67DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9BA90F7-022A-668B-6A91-DE6F35B67DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9BA90F7-022A-668B-6A91-DE6F35B67DA7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{05E8BE28-0E38-AC7A-F72A-84ED19B3627A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{05E8BE28-0E38-AC7A-F72A-84ED19B3627A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{05E8BE28-0E38-AC7A-F72A-84ED19B3627A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{05E8BE28-0E38-AC7A-F72A-84ED19B3627A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
