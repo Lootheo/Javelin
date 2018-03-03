@@ -53,20 +53,14 @@
   <ItemGroup>
      <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
-     <Compile Include="Assets\Scripts\AStar.cs" />
      <Compile Include="Assets\Scripts\CameraLookAt.cs" />
      <Compile Include="Assets\Scripts\CharacterInputEvents.cs" />
-     <Compile Include="Assets\Scripts\DepthFinding.cs" />
-     <Compile Include="Assets\Scripts\DrawVelocity.cs" />
      <Compile Include="Assets\Scripts\JavelinAnimator.cs" />
      <Compile Include="Assets\Scripts\MissileLookAt.cs" />
      <Compile Include="Assets\Scripts\MissilePropeler.cs" />
      <Compile Include="Assets\Scripts\MissileTargetDetection.cs" />
      <Compile Include="Assets\Scripts\NightVisionEffect.cs" />
-     <Compile Include="Assets\Scripts\Node.cs" />
-     <Compile Include="Assets\Scripts\NodeManager.cs" />
      <Compile Include="Assets\Scripts\ObstacleScript.cs" />
-     <Compile Include="Assets\Scripts\PathFollow.cs" />
      <Compile Include="Assets\Scripts\RocketInfoUI.cs" />
      <Compile Include="Assets\Scripts\SquareLoopAnimator.cs" />
      <Compile Include="Assets\Scripts\TargetExplode.cs" />
