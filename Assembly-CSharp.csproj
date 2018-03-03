@@ -51,6 +51,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CameraLookAt.cs" />
+     <Compile Include="Assets\CharacterInputEvents.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
+     <Compile Include="Assets\DrawVelocity.cs" />
+     <Compile Include="Assets\JavelinAnimator.cs" />
+     <Compile Include="Assets\MissilePropeler.cs" />
+     <Compile Include="Assets\MissileTargetDetection.cs" />
      <Compile Include="Assets\Moments\Moments Recorder\Demo\Scripts\CubeKiller.cs" />
      <Compile Include="Assets\Moments\Moments Recorder\Demo\Scripts\CubeSpawner.cs" />
      <Compile Include="Assets\Moments\Moments Recorder\Demo\Scripts\Record.cs" />
@@ -62,6 +70,8 @@
      <Compile Include="Assets\Moments\Moments Recorder\Scripts\Recorder.cs" />
      <Compile Include="Assets\Moments\Moments Recorder\Scripts\ReflectionUtils.cs" />
      <Compile Include="Assets\Moments\Moments Recorder\Scripts\Worker.cs" />
+     <Compile Include="Assets\NightVisionEffect.cs" />
+     <Compile Include="Assets\RocketInfoUI.cs" />
      <Compile Include="Assets\Scripts\AStar.cs" />
      <Compile Include="Assets\Scripts\DepthFinding.cs" />
      <Compile Include="Assets\Scripts\MissileLookAt.cs" />
@@ -70,7 +80,25 @@
      <Compile Include="Assets\Scripts\ObstacleScript.cs" />
      <Compile Include="Assets\Scripts\PathFollow.cs" />
      <Compile Include="Assets\Scripts\TargetScript.cs" />
+     <Compile Include="Assets\SquareLoopAnimator.cs" />
+     <Compile Include="Assets\TargetExplode.cs" />
+     <Compile Include="Assets\TargetRandomMovement.cs" />
+     <None Include="Assets\Demigiant\DOTween\readme.txt" />
+     <None Include="Assets\race-track-lake\readmore.txt" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+     <None Include="Assets\NightVisionEffectShader.shader" />
+     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Moments\LICENSE.txt" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
+     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
+     <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
+     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/home/lootheo/Unity-2017.3.0f1/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -98,6 +126,18 @@
  <Reference Include="UnityEngine.SpatialTracking">
  <HintPath>/home/lootheo/Unity-2017.3.0f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>/home/lootheo/MissileAI/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>/home/lootheo/MissileAI/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>/home/lootheo/MissileAI/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/home/lootheo/MissileAI/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Advertisements">
  <HintPath>/home/lootheo/.config/unity3d/cache/packages/packages.unity.com/com.unity.ads@0.0.18/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
@@ -107,6 +147,10 @@
  <Reference Include="UnityEngine.Purchasing">
  <HintPath>/home/lootheo/.config/unity3d/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{9CF64CE2-7356-9650-57A8-14E3728F0CA1}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
