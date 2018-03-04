@@ -11,7 +11,7 @@ The project will cover various pathfinding algorithms to solve a single problem:
 
 The project structure will feature several scenes on how the approach was made.
 
-## Installation
+## Installationeee
 
 The project already includes all the dependencies it requires. Just need to clone the project and open it using Unity. The version used is 2017.3 for Ubuntu, however windows should work.
 
