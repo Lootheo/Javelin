@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissileAI2", "Assembly-CSharp-firstpass.csproj", "{D60C99D6-181A-93B6-8F73-213D01F24DDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissileAI2", "Assembly-CSharp.csproj", "{F3708A0B-5792-9E0B-152B-1ED780235BF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissileAI2", "Assembly-CSharp-Editor-firstpass.csproj", "{9FAAD4AE-C65D-4C46-CBC7-9EFA846A894E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D60C99D6-181A-93B6-8F73-213D01F24DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D60C99D6-181A-93B6-8F73-213D01F24DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D60C99D6-181A-93B6-8F73-213D01F24DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D60C99D6-181A-93B6-8F73-213D01F24DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3708A0B-5792-9E0B-152B-1ED780235BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3708A0B-5792-9E0B-152B-1ED780235BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3708A0B-5792-9E0B-152B-1ED780235BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3708A0B-5792-9E0B-152B-1ED780235BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FAAD4AE-C65D-4C46-CBC7-9EFA846A894E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FAAD4AE-C65D-4C46-CBC7-9EFA846A894E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FAAD4AE-C65D-4C46-CBC7-9EFA846A894E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FAAD4AE-C65D-4C46-CBC7-9EFA846A894E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
