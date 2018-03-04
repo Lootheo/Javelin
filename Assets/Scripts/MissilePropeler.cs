@@ -10,9 +10,14 @@ public class MissilePropeler : MonoBehaviour {
 
 	[Range(0,20)]
 	public float steeringSpeed;
+
+	[Range(0,40)]
+	public float upwardsSpeed;
 	
 	public Rigidbody rb;
 	public Transform propeler;
+
+	public bool flyingUpwards;
 
 	public MissileTargetDetection missileTargetDetection;
 
@@ -25,13 +30,16 @@ public class MissilePropeler : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		ApplyThrustForce();
-        Vector3 targetDir = missileTargetDetection.missileTarget.position - transform.position;
-        float step = steeringSpeed * Time.deltaTime;
-        Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0F);
-        transform.rotation = Quaternion.LookRotation(newDir);
+        Vector3 targetDir = missileTargetDetection.missileTarget.position - rb.position;
+		if(flyingUpwards){
+			Vector3 rotateAmount = Vector3.Cross(Vector3.up,transform.forward);
+			rb.angularVelocity = -rotateAmount*steeringSpeed;
+		}
 	}
 
 	void ApplyThrustForce(){
+		if(flyingUpwards)
+			rb.AddForceAtPosition(transform.forward * upwardsSpeed,propeler.position);
 		if(thrusterOn)
 			rb.AddForceAtPosition(transform.forward * thrust,propeler.position);
 	}

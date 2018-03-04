@@ -98,14 +98,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1990178086839710}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: -0.7071068}
-  m_LocalPosition: {x: 0, y: 8.41, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 153.26, y: 15.381, z: 8.0298}
+  m_LocalScale: {x: 0.5185695, y: 0.5185694, z: 0.5185694}
   m_Children:
   - {fileID: 4113796418871594}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23123213476823144
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -120,7 +120,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 5539cb5a5dbd6e248a2a1e3313b2ffb8, type: 2}
+  - {fileID: 2100000, guid: 488e2ecaf1be14948878bac1bbeb1f11, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -168,30 +168,32 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1990178086839710}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71ce56f48a07d4cc7a4e71814ddfe131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   thrusterOn: 1
-  thrust: 6
-  steeringSpeed: 5.6
+  thrust: 11.03
+  steeringSpeed: 3
+  upwardsSpeed: 29.6
   rb: {fileID: 54773719839699456}
   propeler: {fileID: 4113796418871594}
-  missileTargetDetection: {fileID: 0}
+  flyingUpwards: 1
+  missileTargetDetection: {fileID: 114609600397359476}
 --- !u!114 &114609600397359476
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1990178086839710}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66e36b290194747699dca67c03e52322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   missileTarget: {fileID: 0}
-  distance: {x: 0, y: 0, z: 0}
+  distance: {x: 55.379997, y: 16130.323, z: -290.73102}
 --- !u!120 &120394890001732634
 LineRenderer:
   m_ObjectHideFlags: 1
@@ -353,7 +355,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -474223475
+  randomSeed: 2034954197
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -818,7 +820,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1.88
+      value: 0.36
       mode: 0
       spread: 0
       speed:
