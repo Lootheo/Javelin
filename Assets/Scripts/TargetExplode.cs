@@ -10,7 +10,7 @@ public class TargetExplode : MonoBehaviour {
 		
 	}
 	
-	void OnTriggerStay(Collider other)
+	void OnCollisionEnter(Collision other)
 	{
 		Instantiate(explosionParticle,transform.position,Quaternion.identity);
 		Destroy(other.gameObject);

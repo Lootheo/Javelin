@@ -6,8 +6,16 @@ public class CharacterInputEvents : MonoBehaviour {
 
 
 	public JavelinAnimator javelinAnimator;
+	[Header("Cameras")]
+	public Camera mainCamera;
+	public Camera aimCamera, uiCamera;
 
-	public Camera mainCamera, aimCamera, uiCamera;
+	[Header("Firing")]
+	public GameObject missile;
+	public Transform shootPoint;
+
+	[Range(0,10000)]
+	public float missileLaunchForce;
 	// Use this for initialization
 	void Start () {
 		
@@ -15,6 +23,11 @@ public class CharacterInputEvents : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if(Input.GetMouseButtonDown(0)){
+
+			GameObject rocket= Instantiate(missile, shootPoint.position,shootPoint.rotation);
+			rocket.GetComponent<Rigidbody>().AddForce(transform.forward*missileLaunchForce);
+		}
 		if(Input.GetMouseButton(1)){
 			javelinAnimator.aiming = true;
 		}else{

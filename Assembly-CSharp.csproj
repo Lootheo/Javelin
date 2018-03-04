@@ -55,6 +55,7 @@
      <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
      <Compile Include="Assets\Scripts\CameraLookAt.cs" />
      <Compile Include="Assets\Scripts\CharacterInputEvents.cs" />
+     <Compile Include="Assets\Scripts\EnemyRender.cs" />
      <Compile Include="Assets\Scripts\JavelinAnimator.cs" />
      <Compile Include="Assets\Scripts\MissileLookAt.cs" />
      <Compile Include="Assets\Scripts\MissilePropeler.cs" />
@@ -66,6 +67,7 @@
      <Compile Include="Assets\Scripts\TargetExplode.cs" />
      <Compile Include="Assets\Scripts\TargetRandomMovement.cs" />
      <Compile Include="Assets\Scripts\TargetScript.cs" />
+     <Compile Include="Assets\Scripts\UITargetFollow.cs" />
      <None Include="Assets\Demigiant\DOTween\readme.txt" />
      <None Include="Assets\race-track-lake\readmore.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
