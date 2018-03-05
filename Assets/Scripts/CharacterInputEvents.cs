@@ -16,15 +16,17 @@ public class CharacterInputEvents : MonoBehaviour {
 
 	[Range(0,10000)]
 	public float missileLaunchForce;
-	// Use this for initialization
-	void Start () {
-		
-	}
+
+
+	public float coolDown, maxCooldown=5.0f;
+	public int bullets =5;
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetMouseButtonDown(0)){
-
+		if(Input.GetMouseButtonDown(0) && coolDown <=0 ){
+			coolDown = maxCooldown;
+			javelinAnimator.aiming = false;
+			javelinAnimator.finishedAiming = false;
 			GameObject rocket= Instantiate(missile, shootPoint.position,shootPoint.rotation);
 			rocket.GetComponent<Rigidbody>().AddForce(transform.forward*missileLaunchForce);
 		}
@@ -32,6 +34,7 @@ public class CharacterInputEvents : MonoBehaviour {
 			javelinAnimator.aiming = true;
 		}else{
 			javelinAnimator.aiming = false;
+			javelinAnimator.finishedAiming = false;
 		}
 		if(javelinAnimator.finishedAiming){
 			EnableAimCamera(true);
