@@ -27,7 +27,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1885927778709564
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,8 +98,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1990178086839710}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 153.26, y: 15.381, z: 8.0298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 152.0087, y: 15.381, z: 8.736937}
   m_LocalScale: {x: 0.5185695, y: 0.5185694, z: 0.5185694}
   m_Children:
   - {fileID: 4113796418871594}
@@ -173,13 +173,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ce56f48a07d4cc7a4e71814ddfe131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrusterOn: 1
-  thrust: 11.03
-  steeringSpeed: 3
-  upwardsSpeed: 29.6
+  thrusterOn: 0
+  thrust: 82.9
+  steeringSpeed: 3.9
+  upwardsSpeed: 29.8
   rb: {fileID: 54773719839699456}
   propeler: {fileID: 4113796418871594}
-  flyingUpwards: 1
+  flyingUpwards: 0
+  seeking: 0
   missileTargetDetection: {fileID: 114609600397359476}
 --- !u!114 &114609600397359476
 MonoBehaviour:
@@ -200,7 +201,7 @@ LineRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1990178086839710}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -230,7 +231,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 8.46}
+  - {x: 0, y: 0, z: 1000}
   m_Parameters:
     serializedVersion: 2
     widthMultiplier: 1
@@ -355,7 +356,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 2034954197
+  randomSeed: -1846776815
   InitialModule:
     serializedVersion: 3
     enabled: 1
